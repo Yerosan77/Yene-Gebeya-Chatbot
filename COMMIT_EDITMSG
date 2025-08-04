@@ -1,0 +1,6 @@
+Enable admins to approve orders, manage stock, and notify customers
+
+Implements admin order approval with stock reduction and customer notifications, and adds order tracking features to user handlers.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: 170b0e56-7c40-469b-9f53-1556104fc477
