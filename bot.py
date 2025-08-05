@@ -1,19 +1,11 @@
-
-from aiogram import Bot, Dispatcher
-from aiogram.fsm.storage.memory import MemoryStorage
+import os
+from aiogram import Bot
 from aiogram.enums import ParseMode
-import asyncio
 
-BOT_TOKEN = "7653628673:AAHm2SsOwnPWeDMc1XoT4BHNOqi2IMWFyuE"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+if not BOT_TOKEN:
+    raise ValueError("BOT_TOKEN is not set in environment variables!")
 
-bot = Bot(token=7653628673:AAHm2SsOwnPWeDMc1XoT4BHNOqi2IMWFyuE, parse_mode=ParseMode.HTML)
-storage = MemoryStorage()
-dp = Dispatcher(storage=storage)
+bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.HTML)
 
-# Add your handlers here
-
-async def main():
-    await dp.start_polling(bot)
-
-if __name__ == "__main__":
-    asyncio.run(main())
+# ...rest of your code...
