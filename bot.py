@@ -4,9 +4,9 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.enums import ParseMode
 import asyncio
 
-BOT_TOKEN = "your-bot-token"
+BOT_TOKEN = "7653628673:AAHm2SsOwnPWeDMc1XoT4BHNOqi2IMWFyuE"
 
-bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.HTML)
+bot = Bot(token=7653628673:AAHm2SsOwnPWeDMc1XoT4BHNOqi2IMWFyuE, parse_mode=ParseMode.HTML)
 storage = MemoryStorage()
 dp = Dispatcher(storage=storage)
 
